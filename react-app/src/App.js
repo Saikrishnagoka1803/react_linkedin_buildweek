@@ -1,10 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Education from './components/Education';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Interests from './components/Interests';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-     <h3>hello</h3>
+      <Dashboard />
+      <Education/>
+      <Interests/>
+      
     </div>
   );
 }

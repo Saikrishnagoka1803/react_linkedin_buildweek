@@ -1,0 +1,37 @@
+
+.sizeimage{
+    height: 5rem;
+    width: 5rem;
+}
+.interestsizeimage{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.textsize{
+   font-size:small;
+   font-weight: bolder;
+}
+.fontstyle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dashtextsize{
+    font-size:small; 
+
+}
+
+.edit{
+      /* position: relative;
+      margin-left: 43rem;
+      bottom: 20px; */
+      width    : 40px;
+      height   : 40px;
+      background-color : rgb(241, 239, 239);
+      border   : 8px solid rgb(241, 239, 239);
+      border-radius: 50%;
+   
+  }
+  .edit:hover{
+      background-color: white;
+      border   : 8px solid white;
+      cursor: pointer;
+  }
