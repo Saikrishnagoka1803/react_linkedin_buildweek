@@ -115,3 +115,26 @@ border: 1px solid rgb(241, 239, 239)
     cursor: pointer;
     text-decoration: underline;
 }
+
+.about-edit{
+      width    : 36px;
+      height   : 36px;
+      background-color : rgb(241, 239, 239);
+      border   : 8px solid rgb(241, 239, 239);
+      border-radius: 50%;
+}
+.about-edit:hover{
+    background-color: white;
+    border   : 8px solid white;
+    cursor: pointer;
+}
+
+.message-img{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+.chat:hover{
+   background-color: rgb(241, 239, 239) ;
+   border: 10px solid rgb(241, 239, 239);
+}

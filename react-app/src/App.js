@@ -1,13 +1,16 @@
 
 import './App.css';
+import About from './components/About';
+import Messaging from './components/Messaging';
 import Profile from './components/Profile';
-import ModalEdit from './components/ModalEdit';
+
 
 function App() {
   return (
    <>
      <Profile />
-     <ModalEdit />
+     <About />
+     <Messaging />
     </>
   );
 }
