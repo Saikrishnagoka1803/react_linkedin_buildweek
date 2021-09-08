@@ -58,3 +58,17 @@
     color: blue;
  
   }
+  .fontsize{
+      font-size: smaller;
+    margin: 0px;
+    padding: 2px;
+  }
+  .setdiv{
+    max-height: 10vh;
+    max-width: 5vh;
+  }
+  .backg:hover{
+    background-color: rgb(235, 228, 228);
+    border   : 10px solid white;
+    
+  }
