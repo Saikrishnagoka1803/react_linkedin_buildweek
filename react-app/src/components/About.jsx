@@ -11,10 +11,10 @@ import { Container, Row, Col,Modal,Button,Form } from "react-bootstrap";
     const handleShow = () => setShow(true);
     return(
      <>
-     <Container className='my-4'>
+     <Container className='my-4 about shadow'>
        
          <Row>
-             <Col  md={6} lg={8} sm={12} className='shadow'>
+             <Col  >
                 <div className='d-flex ml-3 mt-3 justify-content-between'>
                     <h4 >About</h4>
                     <MdEdit className='about-edit' onClick={handleShow}/>

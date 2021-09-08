@@ -1,11 +1,12 @@
 /* profile style */
  .profileBox {
-    padding: 0px;
+
+    padding:0px;
     margin: 0%;
     background-color: white;
-    border-radius: 20px;
-    /* border: solid 1px rgba(133, 131, 131, 0.287); */
- 
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px rgba(133, 131, 131, 0.287);
  }
   .profileImage {
         position : absolute;
@@ -38,7 +39,7 @@
   }
   .edit{
       position: relative;
-      margin-left: 43rem;
+      margin-left: 41.5rem;
       bottom: 20px;
       width    : 40px;
       height   : 40px;

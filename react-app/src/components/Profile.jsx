@@ -59,12 +59,12 @@ class Profile extends Component{
 
     render(){
         return(
-            <div className='profileBox'>
-                <Container  className='mt-3'>
+            <div className='profileBox shadow mt-5' >
+                <Container >
                     {
                         this.state.profile && (
                             <Row style={{padding:'0px'}}>
-                                <Col md={6} lg={8} sm={12} className='shadow'>
+                                <Col >
                             <div className="wrapper">
                                <img className="profileImage" src={this.state.profile.image} alt='profile-pic'/>
                             </div>
@@ -86,7 +86,7 @@ class Profile extends Component{
                             
                             </div>
                             <Row>
-                                <Col xm={12} sm={12} md={3} lg={6} className='p-0'>
+                                <Col  className='p-0'>
                                 <div className='wrapper-two my-4 ml-3'>
                                     <div className='my-2'>
                                        <div className='d-flex'><h6 className='mx-3' >Open to work</h6> <span className='ml-auto mr-3'><MdEdit /></span></div> 
@@ -95,7 +95,7 @@ class Profile extends Component{
                                     </div>
                                 </div>
                                 </Col>
-                                <Col xm={12} sm={12} md={3} lg={6} className='pl-0'>
+                                <Col  className='pl-0'>
                                 <div className='wrapper-three mt-4 ml-3'>
                                     <div className='my-2'>
                                     <p className='mx-3'>Share that you're hiring and attract qualified candidates</p>

@@ -1,8 +1,14 @@
 #topNavbar {
     background-color: #FFFFFF;
+   
     position: relative;
     width: 100vw;
     margin: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 99;
 }
 
 .navbar {

@@ -17,9 +17,9 @@ export default function TopNavbar() {
     return (
         <div id='topNavbar'>
             <Navbar className='justify-content-between align-items-center p-0 flex-nowrap mt-2'>
-                <Row className='ml-4 align-items-center flex-nowrap'>
+                <Row className=' align-items-center flex-nowrap' style={{marginLeft:'160px'}}>
                     <Navbar.Brand > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" alt="logo" /> </Navbar.Brand>
-                    <Form>
+                    <Form style={{width: '250px'}}>
                         <IoSearchSharp />
                         <FormControl
                             type="search"
@@ -29,7 +29,7 @@ export default function TopNavbar() {
                         />
                     </Form>
                 </Row>
-                <Row className='mr-4 '>
+                <Row  style={{marginRight:'160px'}}>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
