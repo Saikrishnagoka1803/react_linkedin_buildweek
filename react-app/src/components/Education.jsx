@@ -2,12 +2,14 @@ import {Container, Row, Col, Modal,Button, Form} from 'react-bootstrap'
 import EducationElements from './EducationElements'
 import {AiOutlinePlus} from 'react-icons/ai'
 import { useState, useEffect } from 'react'
+import EduAlert from './Alert'
 
 const Education = () => {
   const [Education, setEducation] = useState([])
   const [post, setpost] = useState({})
     const [show, setShow] = useState(false);
-
+    const [render, setrender] = useState(false) 
+    // const [alert, setalert] = useState(false)
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -31,7 +33,7 @@ const Education = () => {
         }
       }
       fetcheexp()
-  },[])
+  },[render])
 
  const handleform = async(e) => {
       e.preventDefault()
@@ -47,6 +49,7 @@ const Education = () => {
         })
         if(response.ok){
           alert("posted successfully")
+          setrender(true)
         }
         
       } catch (error) {
@@ -54,6 +57,11 @@ const Education = () => {
       }
 
  }
+ useEffect(() => {
+   return () => {
+     setrender(false)
+   }
+ },[])
 
     return(
         <>
@@ -62,15 +70,16 @@ const Education = () => {
                 <Row>
                     <Col xs={12} sm={4} md={6} lg={8}  className='shadow'>
                     <div className='d-flex justify-content-between'>
-                        <h5 className='mt-3'>Education</h5>
-                        <div className='mt-3' style={{height:'0rem'}} onClick={handleShow}><AiOutlinePlus/></div>
+                        <h4 className='mt-3'>Education</h4>
+                        {/* {render && <EduAlert/>} */}
+                        <div className='mt-3 mr-2  newedit' style={{height:'2rem'}} onClick={handleShow}><AiOutlinePlus/></div>
                     </div>
-                    <hr />
+                  
 
             {
               Education.map(ele => <EducationElements eachedu = {ele} key={ele._id}/>)
             }
-                  
+            
                     </Col>
                 </Row>
             </Container>
@@ -122,8 +131,8 @@ const Education = () => {
                     <Form.Control onChange={(e) =>{setpost({...post, area: e.target.value})}}
                     type="text" placeholder="Eg: Boston University" required/>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
+                <Button variant="success" type="submit">
+                    Save
                 </Button>
           </Form>
         </Modal.Body>
@@ -131,9 +140,7 @@ const Education = () => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+          
         </Modal.Footer>
       </Modal>
        </>

@@ -1,7 +1,7 @@
 import { Image, Modal,Button, Form } from "react-bootstrap"
 import './Education.css'
 import {MdModeEdit} from 'react-icons/md'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const EducationElements = ({eachedu}) => {
 
@@ -62,21 +62,26 @@ const handledelete = async() =>{
 
     return(
         <>
-        <div className='d-flex justify-content-between mt-3 mb-3'>
+        <div className='d-flex justify-content-between mt-3 mb-0 margi'>
         <div className='d-flex justify-content-between'>
             <div className='mr-4'>
                 <Image 
                 src="https://images.unsplash.com/photo-1630865769398-670d8de09d72?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" roundedCircle 
                 className='sizeimage'/>
             </div>
-            <div className='mt-3'>
+            <div className='mt-2 styleit'>
                 <div>
-                    <h5 className='text-left'>{eachedu.company}</h5>
+                    <h5 className='text-left mb-0'>{eachedu.company}</h5>
                 </div>
                 <div>
-                    <h6>{eachedu.role},{eachedu.area},{eachedu.startDate}</h6>
-                </div>
+                <span className='text-muted textsize'>{eachedu.role}, {eachedu.description}, {eachedu.area}.</span>
+               </div>
+               <div>
+               <h6 className='text-muted textsize text-left'>{eachedu.startDate.slice(0,4)}</h6>
+               </div>
+               <hr />
             </div>
+            {/* <hr /> */}
 
         </div>
         <div className='mt-3 edit'>
@@ -112,13 +117,13 @@ const handledelete = async() =>{
                     <Form.Label>Start Date:</Form.Label>
                     <Form.Control onChange={(e) =>{setput({...put, startDate: e.target.value})}}
                     value={put.startDate}
-                    type="datetime-local" placeholder="Eg: Boston University" required/>
+                    type="date" placeholder="Eg: Boston University" required/>
                 </Form.Group>
                 <Form.Group className="mb-3 ml-5" >
                     <Form.Label>End Date:</Form.Label>
                     <Form.Control onChange={(e) =>{setput({...put, endDate: e.target.value})}}
                     value={put.endDate}
-                    type="datetime-local" placeholder="Eg: Boston University" />
+                    type="date" placeholder="Eg: Boston University" />
                 </Form.Group>
                </div>
                 
@@ -136,12 +141,14 @@ const handledelete = async() =>{
                     value={put.area}
                     type="text" placeholder="Eg: Boston University" required/>
                 </Form.Group>
-                <Button variant="success" type="submit">
+               <div className="d-flex justify-content-between">
+               <Button variant="success" type="submit">
                     Save
                 </Button>
                 <Button variant="danger" onClick={handledelete}>
                         Delete
-                        </Button>
+                </Button>
+               </div>
           </Form>
         </Modal.Body>
         <Modal.Footer>
