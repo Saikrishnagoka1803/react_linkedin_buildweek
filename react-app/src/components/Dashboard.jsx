@@ -3,6 +3,8 @@ import { FaSatelliteDish } from "react-icons/fa"
 import { IoMdPeople } from "react-icons/io"
 import { IoMdCash } from "react-icons/io"
 import { IoIosBookmark } from "react-icons/io"
+import { RiStarLine } from "react-icons/ri"
+
 
 const Dashboard = () => {
     return(
@@ -10,8 +12,12 @@ const Dashboard = () => {
             <Container className=' shadow dashboard'>
                 <Row>
                 <Col>
+               
                     <h5 className='text-left mt-3 pl-2'>Your Dashboard</h5>
+                    <div className='d-flex justify-content-between'>
                     <h6 className='text-left text-muted fontstyle pl-2'>Private to You</h6>
+                     <span className='mr-2'><RiStarLine /><span className='text-muted ml-2 mt-2'> All Star</span></span>
+                     </div>
                     <Row className='mt-4 px-4'>
                         <Col md={12} className='shadow ' style={{backgroundColor:'white',borderRadius:'8px', padding:'16px 10px'}}> 
                             <div className='d-flex justify-content-between'>
