@@ -1,9 +1,11 @@
 
+
 import './App.css';
 import Education from './components/Education';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Interests from './components/Interests';
 import Dashboard from './components/Dashboard';
+import Profiles from "./components/Profiles"; 
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
       <Dashboard />
       <Education/>
       <Interests/>
-      
-    </div>
-  );
-}
+      <Profiles heading="People also viewed"/>
+      <Profiles heading="People you may know"/>
+     </div>  
+
+   );
+ }
 
 export default App;
