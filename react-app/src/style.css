@@ -22,8 +22,10 @@
   .wrapper {
     background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg");
     background-repeat: no-repeat;
+    
     position: relative;
     height: 200px;
+
    
   }
   .PhotoCamera{

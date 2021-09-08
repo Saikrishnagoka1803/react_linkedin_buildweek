@@ -10,7 +10,8 @@ class Messaging extends Component {
 
     state = {
         profiles: [],
-        showValue: false
+       
+        showMessage: false
 
     }
 
@@ -40,23 +41,25 @@ class Messaging extends Component {
 
         return (
 
-            <div id='messaging' className='mb-3'>
+            <div id='messaging' className='mb-0'>
                 <Container>
                     <Row>
-                        <Col lg={3} className='shadow'>
+                        <Col  className='shadow'>
                         <div className='d-flex mt-3'> 
                           {this.state.profiles.filter((p) => p.name === 'Bimal Kumar').slice(0,1).map(p => (<img class='message-img' src={p.image} alt='profile'/>))}
                           <h6 className='ml-3 mt-2'>Messaging</h6>
                           <div className='ml-auto'>
                           <span>...</span>
                           <FiEdit className='mx-3'/>
-                          <BsChevronCompactDown />
+                          <BsChevronCompactDown onClick={(e) =>{
+                              this.setState({showMessage: !this.state.showMessage})
+                          }}/>
                           </div>
                          
                         </div>
-                        <input className='w-100 mt-2' style={{backgroundColor:"rgb(241, 239, 239)",border:'transparent',borderRadius:'3px'}}placeholder='Search messages'></input>
-                        {
-                            this.state.profiles.slice(0,10).map(p =>{
+                        <input className='w-100 mt-2' style={{backgroundColor:"rgb(241, 239, 239)",border:'transparent',borderRadius:'3px'}} placeholder='Search messages'></input>
+                        { 
+                            this.state.showMessage && this.state.profiles.slice(0,8).map(p =>{
                                 return(
                                    <div key={p._id} className="d-flex my-4 chat">
                                      <img className='message-img mr-3' src={p.image} alt='profile'/>

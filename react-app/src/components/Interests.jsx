@@ -4,10 +4,10 @@ import InterestElements from './InterestElements'
 const Interests = () => {
 
     return(
-        <div className='Edu-aligning mt-5 '>
+        <div className='Edu-aligning mt-3 mb-5 shadow interest'>
              <Container >
                 <Row>
-                <Col sm={4} md={6} lg={8}  className='shadow text-left'>
+                <Col className=' text-left'>
                     <div className='mt-3 mb-4'><h5> Interests</h5></div>
                     
                     <InterestElements />

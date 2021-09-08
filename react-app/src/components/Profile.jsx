@@ -59,12 +59,12 @@ class Profile extends Component{
 
     render(){
         return(
-            <div className='profileBox shadow mt-5' >
+            <div className='profileBox shadow mt-5 mb-4' >
                 <Container >
                     {
                         this.state.profile && (
-                            <Row style={{padding:'0px'}}>
-                                <Col >
+                            <Row style={{padding:'0px' ,marginLeft:'-30px', marginRight:'-30px'}}>
+                            <Col>
                             <div className="wrapper">
                                <img className="profileImage" src={this.state.profile.image} alt='profile-pic'/>
                             </div>

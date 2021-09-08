@@ -2,6 +2,7 @@ import { Image, Modal,Button, Form } from "react-bootstrap"
 import './Education.css'
 import {MdModeEdit} from 'react-icons/md'
 import { useState } from 'react'
+import '../style.css'
 
 const EducationElements = ({eachedu}) => {
 
@@ -62,7 +63,7 @@ const handledelete = async() =>{
 
     return(
         <>
-        <div className='d-flex justify-content-between mt-3 mb-0 margi'>
+        <div className='d-flex justify-content-between mt-3 mb-0'>
         <div className='d-flex justify-content-between'>
             <div className='mr-4'>
                 <Image 
@@ -84,8 +85,8 @@ const handledelete = async() =>{
             {/* <hr /> */}
 
         </div>
-        <div className='mt-3 edit'>
-            <span onClick={handleShow}><MdModeEdit/></span>
+        <div className='mt-3'>
+            <span onClick={handleShow}><MdModeEdit className='about-edit'/></span>
         </div>
      </div>
 
@@ -151,14 +152,7 @@ const handledelete = async() =>{
                </div>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-            <div className='d-flex justify-content-start'>
-            <Button className='mr-5' variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          
-            </div>
-        </Modal.Footer>
+        
       </Modal>
 
      </>

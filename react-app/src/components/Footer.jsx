@@ -3,9 +3,11 @@ import { Container, Row, Form } from 'react-bootstrap'
 import { IoSettingsSharp } from "react-icons/io5";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import "../style.css";
+import Messaging from './Messaging';
 
 export default function Footer() {
     return (
+        <>
         <div id='footer'>
             <Container>
                 <Row><div><img src="https://1000logos.net/wp-content/uploads/2017/03/Linkedin-Logo.png" alt="logolarge" /></div></Row>
@@ -61,8 +63,12 @@ export default function Footer() {
                     </div>
                 </Row>
                 <Row className='copyright'><p>LinkedIn Corporation © 2021</p></Row>
+               
             </Container>
+           
 
         </div>
+       
+         </>
     )
 }

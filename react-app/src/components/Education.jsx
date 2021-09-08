@@ -65,14 +65,14 @@ const Education = () => {
 
     return(
         <>
-        <div className='Edu-aligning mt-5 '>
+        <div className='Edu-aligning my-3 experience'>
              <Container >
                 <Row>
-                    <Col xs={12} sm={4} md={6} lg={8}  className='shadow'>
+                    <Col className='shadow'>
                     <div className='d-flex justify-content-between'>
-                        <h4 className='mt-3'>Education</h4>
-                        {/* {render && <EduAlert/>} */}
-                        <div className='mt-3 mr-2  newedit' style={{height:'2rem'}} onClick={handleShow}><AiOutlinePlus/></div>
+                        <h4 className='mt-3'>Experience</h4>
+                        {render && <EduAlert/>}
+                        <div className='mt-3 ml-4' style={{height:'2rem'}} onClick={handleShow}><AiOutlinePlus className='about-edit'/></div>
                     </div>
                   
 
@@ -136,12 +136,7 @@ const Education = () => {
                 </Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          
-        </Modal.Footer>
+        
       </Modal>
        </>
                )
