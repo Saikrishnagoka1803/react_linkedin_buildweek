@@ -87,7 +87,7 @@ class Profile extends Component{
                             </div>
                             <Row>
                                 <Col  className='p-0'>
-                                <div className='wrapper-two my-4 ml-3'>
+                                <div className='wrapper-two my-4 ml-4'>
                                     <div className='my-2'>
                                        <div className='d-flex'><h6 className='mx-3' >Open to work</h6> <span className='ml-auto mr-3'><MdEdit /></span></div> 
                                         <p className='mx-3'>Frontend Developers role</p>
@@ -96,7 +96,7 @@ class Profile extends Component{
                                 </div>
                                 </Col>
                                 <Col  className='pl-0'>
-                                <div className='wrapper-three mt-4 ml-3'>
+                                <div className='wrapper-three mt-4 mx-2'>
                                     <div className='my-2'>
                                     <p className='mx-3'>Share that you're hiring and attract qualified candidates</p>
                                     <h6 className="text-primary mx-3" > Get Started</h6>

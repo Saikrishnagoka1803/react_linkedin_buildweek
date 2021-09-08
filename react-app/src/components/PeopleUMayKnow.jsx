@@ -10,8 +10,8 @@ const PeopleUMayKnow = ( props ) => {
                 <h6  style={{marginBottom:'0px',fontSize:'1rem'}}>{props.dataobj.name+'  '+props.dataobj.surname}</h6>
                 <p  className='text-muted' style={{marginBottom:'5px',fontSize:'0.8rem'}}>{props.dataobj.title}</p>
 
-                <div><Button style={{borderRadius:'30px', padding:'2px 12px'}} 
-                variant="outline-dark">connect</Button></div>
+                <div><Button className="connect" style={{borderRadius:'30px', padding:'2px 12px'}} 
+                variant="outline-dark">Connect</Button></div>
             </div>
             </li>
             </ul>
