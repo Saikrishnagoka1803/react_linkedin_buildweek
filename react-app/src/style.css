@@ -139,7 +139,7 @@ border: 1px solid rgb(241, 239, 239)
 }
 .chat:hover{
    background-color: rgb(241, 239, 239) ;
-   border: 10px solid rgb(241, 239, 239);
+   /* border: 1px solid rgb(241, 239, 239); */
 }
 /* * START OF THE FOOTER */ 
 

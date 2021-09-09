@@ -8,15 +8,14 @@ export default function SidebarOptional() {
             <Container >
                 <Row>
                  
-                    <div><h2>Edit Public Profile & URL</h2></div>
-                    <div><AiFillQuestionCircle/></div>
-               
+                    <h2>Edit Public Profile & URL</h2>
+                    <AiFillQuestionCircle />
                 </Row>
                 <Row>
                    
-                    <div><h2>Add profile in another language</h2></div>
-                    <div><AiFillQuestionCircle/></div>
-                  
+                   <h2>Add profile in another language</h2> 
+                   <AiFillQuestionCircle />
+                
                 </Row>
             </Container>
 

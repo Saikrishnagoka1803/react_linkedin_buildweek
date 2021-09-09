@@ -8,6 +8,7 @@ import Education from './Education';
 import Interests from './Interests';
 import Profiles from './Profiles';
 import Messaging from './Messaging';
+import SideBarRecent from './SideBarRecent';
 
 export default function ProfilePage() {
     return (
@@ -23,8 +24,10 @@ export default function ProfilePage() {
                 </Col>
                 <Col className='col-md-4 ordder-md-2 pl-3'>
                     <SidebarOptional/>
+                    <SideBarRecent />
                     <Profiles heading="People also viewed"/>
                     <Profiles heading="People you may know"/>
+
                 </Col>
             </Row>
         </Container>
