@@ -25,7 +25,11 @@ function App() {
 =======
       <Profiles heading="People also viewed"/>
       <Profiles heading="People you may know"/> */}
+<<<<<<< Updated upstream
       <HomeTop />
+=======
+      
+>>>>>>> Stashed changes
       <SecondComponent/>
       {/* <SecondComponent/>
       <SecondComponent/>
