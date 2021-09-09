@@ -39,7 +39,7 @@ class MessageTop extends Component {
 
         return (
 
-            <div  className='my-5'>
+            <div  className='my-5' style={{backgroundColor:'white'}}>
                 <Container>
                     <Row>
                         <Col  className='shadow'>

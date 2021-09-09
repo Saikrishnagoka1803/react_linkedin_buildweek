@@ -3,7 +3,7 @@ import { GoPlus } from 'react-icons/go'
 import { Nav } from 'react-bootstrap'
 
 const SideBarRecent = ()=>(
-    <div className="border mt-5 shadow" style={{borderRadius:'8px'}}>
+    <div className="border mt-2 shadow" style={{borderRadius:'8px',backgroundColor:'white'}}>
         <div className='mt-3 ml-0'>
         
         <ul style={{listStyle:'none' ,marginLeft:'-20px'}} >
