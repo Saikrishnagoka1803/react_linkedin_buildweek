@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import About from './About'
 import Profile from './Profile'
 import SidebarOptional from './SidebarOptional'
+import NewsFeedLeft from "../components/newsfeed_sidebar/NewsFeedLeft";
+
 
 export default function ProfilePage() {
     return (
@@ -15,6 +17,7 @@ export default function ProfilePage() {
                 </Col>
                 <Col className='col-md-4 ordder-md-2 pl-3'>
                     <SidebarOptional/>
+                    <NewsFeedLeft />
                 </Col>
             </Row>
         </Container>
