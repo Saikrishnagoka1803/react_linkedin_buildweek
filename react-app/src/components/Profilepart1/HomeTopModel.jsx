@@ -13,12 +13,13 @@ function HomeTopModel() {
     const [button, setbutton] = useState(false)
     
     const handlePost = async() => {
+        
             try {
                 let response = await fetch('https://striveschool-api.herokuapp.com/api/posts/',{
                     method : 'POST',
                     body: JSON.stringify(Postobj),
                     headers: {
-                            "content-type" : "Application/json",
+                          "content-type" : "Application/json",
                           "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTM1ZTM0MDdiZTZjMTAwMTVmOWRiYTUiLCJpYXQiOjE2MzA5MjY3NTYsImV4cCI6MTYzMjEzNjM1Nn0.PLWB0OwFXpY_BhYhvSaxQ1MXjj62jzUvJQCe6_HUleU"
                       }
                 })
@@ -28,7 +29,7 @@ function HomeTopModel() {
                     setShow(false)
                 }
                 else{
-                    alert('Sorry, Something went wrong')
+                    console.log('i am the post')
                 }
             } catch (error) {
                 console.log(error)
@@ -96,15 +97,7 @@ function HomeTopModel() {
 
 
                 </Modal.Body>
-                <Modal.Footer style={{justifyContent:'space-between'}} className='d-flex'>
-                   
-                <BsImage style={{fontSize:'1.5rem',color:'skyblue'}}/>
-                    <Button
-                        style={{ borderRadius: '50px', padding: '5px 12px' }} variant="primary" onClick={handleClose}>
-                       close
-                    </Button>
-                    
-                </Modal.Footer>
+               
             </Modal>
         </>
     );

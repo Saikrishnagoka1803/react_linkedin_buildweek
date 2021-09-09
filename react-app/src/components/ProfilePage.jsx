@@ -7,8 +7,9 @@ import Dashboard from './Dashboard';
 import Education from './Education';
 import Interests from './Interests';
 import Profiles from './Profiles';
+import Footer from './Footer';
 
-import MessageTop from './MessageTop';
+
 
 
 export default function ProfilePage() {
@@ -36,6 +37,7 @@ export default function ProfilePage() {
 
                 </Col>
             </Row>
+            <Footer />
         
           </Container>
         

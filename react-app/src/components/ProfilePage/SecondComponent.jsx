@@ -28,7 +28,7 @@ const SecondComponent = () => {
                     setprofilepost(data)
                     setlength(data.length)
                       setisLoading(false)
-                    //console.log("Hey Iam posts",data)
+                    console.log("Hey Iam posts",data)
                 }
                 else{
                     console.log("Something went wrong")
@@ -43,21 +43,24 @@ const SecondComponent = () => {
     return(
         
        
-       isLoading ? <Loader /> : profilepost && profilepost.slice(length-5, length).reverse().map(ele => <Container className='mt-3' style={{backgroundColor:'white'}} >
+       isLoading ? <Loader /> : profilepost && profilepost.slice(length-15, length).reverse().map(ele => <Container className='mt-3' style={{backgroundColor:'white'}} >
             
                 <Row className='justify-content-center' style={{backgroundColor:'white'}}>
                     <Col className='shadow' offset='2' style={{borderTop: '1px solid gray', borderRadius:'8px', backgroundColor:'white'}}>
 
                         <div className='d-flex justify-content-start mt-2 mb-2'>
                             <img style={{borderRadius:'50px',width:'52px',height:'52px'}} height='60' src="https://images.unsplash.com/photo-1630754328109-013e18676561?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="..." roundedCircle/>
+                        
                             <div>
-                                <h6 className='ml-3 text-left' style={{margin:'0px', fontWeight:'bold'}}>hello</h6>
+                            <div className="d-flex ">
+                                <h6 className='ml-3 text-left' style={{margin:'0px', fontWeight:'bold'}}>{ele.username}</h6>
+                                <BsThreeDots style={{marginLeft:'19rem'}} />
+                               
+                            </div>
                                 <h6 className='ml-3 fontsize text-left'>29585 followers</h6>
                                 <h6 className='ml-3 fontsize text-left'>3d . <GoGlobe/></h6>
                             </div>
-                            <div className='mr-3'>
-                                <BsThreeDots  />
-                            </div>
+                        
                         </div>
                     </Col>
                     

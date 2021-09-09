@@ -5,7 +5,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css' 
 import { Col, Container ,Row} from 'react-bootstrap';
-import Footer from './components/Footer';
+
 import ProfilePage from './components/ProfilePage';
 import TopNavbar from './components/TopNavbar';
 import Messaging from './components/Messaging';
@@ -28,7 +28,7 @@ function App() {
           </Col>
         </Row> 
       </Container>
-      <Footer />
+     
      </div>  
      <span className="message">
      <Messaging  />
