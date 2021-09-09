@@ -17,23 +17,21 @@ import Messaging from './components/Messaging';
 
 
 
+
+import Profiles from "./components/Profiles"; 
+import SecondComponent from './components/ProfilePage/SecondComponent';
+import HomeTop from './components/Profilepart1/HomeTop';
+
 function App() {
   return (
 <>
     <div className="App">
 
-      {/* <Dashboard />
-      <Education/>
-      <Interests/>
-      <Profiles heading="People also viewed"/>
-      <Profiles heading="People you may know"/> */}
-      <SecondComponent/>
-      {/* <SecondComponent/>
-      <SecondComponent/>
-      <SecondComponent/> */}
+      
       <TopNavbar />
       <ProfilePage />
-    
+      <HomeTop />
+      <SecondComponent/>
       <Footer />
        
 
@@ -43,6 +41,11 @@ function App() {
    </span>
 </>
    );
+
+    
+      
+  
+
  }
 
 

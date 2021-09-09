@@ -55,8 +55,12 @@
   .styleit:hover{
     text-decoration: underline;
     color: blue;
- 
+
+
   }
+
+
+  
   .fontsize{
       font-size: smaller;
     margin: 0px;
@@ -70,4 +74,14 @@
     background-color: rgb(235, 228, 228);
     border   : 10px solid white;
     
-  }
+
+ }
+
+  
+  button:hover{
+    background-color: lightgray;
+}
+sup:hover{
+    background-color: green;
+}
+
