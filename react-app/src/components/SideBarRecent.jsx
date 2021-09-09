@@ -1,7 +1,7 @@
 import { HiUserGroup } from 'react-icons/hi'
 import { GoPlus } from 'react-icons/go'
 import { Nav } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
+
 const SideBarRecent = ()=>(
     <div className="border mt-4 shadow" style={{borderRadius:'8px'}}>
         <div className=' mt-3'>
