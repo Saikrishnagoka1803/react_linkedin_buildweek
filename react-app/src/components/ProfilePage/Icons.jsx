@@ -2,11 +2,12 @@ import {GrLike} from 'react-icons/gr'
 import {FaRegCommentDots} from 'react-icons/fa'
 import {FaShare} from 'react-icons/fa'
 import {RiSendPlaneFill} from 'react-icons/ri'
-import { Row} from 'react-bootstrap'
+import { Row ,Col} from 'react-bootstrap'
+import { useState } from 'react'
 const Icons = () => {
 
     const [like, setlike] = useState(0)
-const [comment, setcomment] = useState(false)
+    const [comment, setcomment] = useState(false)
     
     return(
         <>

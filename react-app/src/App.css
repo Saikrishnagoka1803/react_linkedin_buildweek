@@ -111,3 +111,9 @@ body{
   color: black !important;
     
 }
+.text:hover{
+  background-color:rgb(241, 239, 239) ;
+}
+.recent:hover{
+text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import { Modal, Button, Form } from 'react-bootstrap'
-import { useEffect, useState } from 'react'
+import {useState } from 'react'
 import { GiMeshBall } from 'react-icons/gi'
 import { BiCaretDown } from 'react-icons/bi'
 import {BsImage} from 'react-icons/bs'
@@ -48,13 +48,14 @@ function HomeTopModel() {
                     padding: '0 11rem',
                     borderColor: 'black',
                     borderRadius: '50px',
-                    marginLeft: 'auto',
+                    marginLeft: '12px',
                     marginRight: 'auto',
+                    width:'83%'
 
                 }}
                 variant='transparent'
             >
-                <span className='pl-0'>post</span> </Button>
+                <span  style={{marginLeft:'-280px'}}>Create a post</span> </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

@@ -3,7 +3,7 @@ import { Container, Row, Form } from 'react-bootstrap'
 import { IoSettingsSharp } from "react-icons/io5";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import "../style.css";
-import Messaging from './Messaging';
+
 
 export default function Footer() {
     return (

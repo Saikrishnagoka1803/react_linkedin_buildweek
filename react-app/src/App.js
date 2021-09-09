@@ -3,49 +3,39 @@
 
 
 import './App.css';
-import Education from './components/Education';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Interests from './components/Interests';
-import Dashboard from './components/Dashboard';
-import Profiles from "./components/Profiles"; 
-import SecondComponent from './components/ProfilePage/SecondComponent';
+import 'bootstrap/dist/css/bootstrap.min.css' 
+import { Col, Container ,Row} from 'react-bootstrap';
 import Footer from './components/Footer';
-
 import ProfilePage from './components/ProfilePage';
 import TopNavbar from './components/TopNavbar';
 import Messaging from './components/Messaging';
-
-
-
-
-import Profiles from "./components/Profiles"; 
-import SecondComponent from './components/ProfilePage/SecondComponent';
-import HomeTop from './components/Profilepart1/HomeTop';
+import MessageTop from './components/MessageTop';
+import HomePage from './components/HomePage';
+import { BrowserRouter  as Router ,Route} from 'react-router-dom';
 
 function App() {
   return (
-<>
+<>  <Router>
     <div className="App">
-
-      
       <TopNavbar />
-      <ProfilePage />
-      <HomeTop />
-      <SecondComponent/>
-      <Footer />
-       
+      <Route path='/profile' exact component= {ProfilePage} />
+      <Route path='/' exact component={HomePage} />
+      <Container>
+        <Row>
+          <Col className='col-md-6  pr-2' >
+              <Route path="/message" exact component={MessageTop} />
 
+          </Col>
+        </Row> 
+      </Container>
+      <Footer />
      </div>  
      <span className="message">
      <Messaging  />
-   </span>
+    </span>
+   </Router>
 </>
    );
-
-    
-      
-  
-
  }
 
 

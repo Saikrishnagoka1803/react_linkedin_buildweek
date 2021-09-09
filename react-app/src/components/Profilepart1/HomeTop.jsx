@@ -6,6 +6,7 @@ import {MdEventNote} from 'react-icons/md'
 import {RiArticleLine} from 'react-icons/ri'
 import '../Education.css' 
 import HomeTopModel from "./HomeTopModel";
+import {Link} from 'react-router-dom'
 
 class HomeTop extends Component{
 
@@ -15,9 +16,9 @@ class HomeTop extends Component{
         return(
             <Container className='mt-5'>
                 <Row className='justify-content-center'>
-                <Col style={{border : '1px solid gainsboro',borderRadius:'8px',padding:'5px'}}  md={6} className='shadow px-2 '>
+                <Col style={{border : '1px solid gainsboro',borderRadius:'8px',padding:'5px'}}   className='shadow px-2 '>
                         <div className='d-flex mt-2'>
-                    <a href="#"><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50' alt="" /></a>
+                    <Link to='/profile'><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50' alt="" /></Link>
                     
                     <HomeTopModel/>
                    

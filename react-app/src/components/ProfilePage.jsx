@@ -7,30 +7,38 @@ import Dashboard from './Dashboard';
 import Education from './Education';
 import Interests from './Interests';
 import Profiles from './Profiles';
-import Messaging from './Messaging';
-import SideBarRecent from './SideBarRecent';
+
+import MessageTop from './MessageTop';
+
 
 export default function ProfilePage() {
     return (
         <>
+      
         <Container id='profilepage' className='mt-5' >
+        
             <Row>
                 <Col className='col-md-8 ordder-md-1 pr-2'>
+                
                    <Profile />
                    <Dashboard />
                    <About />
                    <Education/>
-                  <Interests/>
+                   
+                   <Interests/>
+                 
                 </Col>
                 <Col className='col-md-4 ordder-md-2 pl-3'>
                     <SidebarOptional/>
-                    <SideBarRecent />
+                  
                     <Profiles heading="People also viewed"/>
                     <Profiles heading="People you may know"/>
 
                 </Col>
             </Row>
-        </Container>
+        
+          </Container>
+        
        
           </>
     )

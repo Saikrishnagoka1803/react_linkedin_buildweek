@@ -8,6 +8,7 @@ import { IoIosBriefcase } from "react-icons/io";
 import { IoSearchSharp } from "react-icons/io5";
 import { RiMessage3Fill } from "react-icons/ri";
 import { CgMenuGridR } from "react-icons/cg";
+import { Link } from 'react-router-dom';
 
 
 export default function TopNavbar() {
@@ -38,9 +39,10 @@ export default function TopNavbar() {
                             navbarScroll
                         >
                             <div className='menuItems'>
-                                <TiHome />
+                            <Link to='/' ><TiHome /></Link>
                                 <Nav.Link>Home</Nav.Link>
                             </div>
+                            
                             <div className='menuItems'>
                                 <FaUsers />
                                 <Nav.Link>My Network</Nav.Link>
@@ -50,7 +52,7 @@ export default function TopNavbar() {
                                 <Nav.Link>Jobs</Nav.Link>
                             </div>
                             <div className='menuItems'>
-                                <RiMessage3Fill />
+                                <Link to='/message' ><RiMessage3Fill /></Link>
                                 <Nav.Link>Messaging</Nav.Link>
 
                             </div>
@@ -59,7 +61,7 @@ export default function TopNavbar() {
                                 <Nav.Link>Notifications</Nav.Link>
                             </div>
                             <div className='menuItems line'>
-                                <img src="https://picsum.photos/200" alt="profile" />
+                                <Link to='/profile'><img src="https://picsum.photos/200" alt="profile" /></Link>
                                 <NavDropdown title="Me" id="navbarScrollingDropdown">
                                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
