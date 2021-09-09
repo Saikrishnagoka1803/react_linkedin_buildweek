@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+
+body{
+  
+  background-color: #F3F2EF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* #root {
+  background-color: #F3F2EF;
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+} */
+
+
+#sidebaroptionalmenu {
+  padding: 5px 15px 5px 15px;
+  margin: 0%;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+
+}
+#sidebaroptionalmenu .row{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+#sidebaroptionalmenu .row:first-child{
+  border-bottom: solid 1px rgba(133, 131, 131, 0.287);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#sidebaroptionalmenu h2{
+  font-size: 16px ;
+  margin: 0px;
+  
+}
+#sidebaroptionalmenu svg{
+  color: #292828bb;
+  width: 20px;
+  height: 20px;
+  
+}
+.about{
+
+  margin: 0%;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+}
+
+
+.sidebar{
+  padding: 5px 15px 5px 15px;
+  margin: 0%;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+
+}
+.dashboard{
+ 
+  margin: 0%;
+  background-color: rgb(202, 205, 212);
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+}
+.dashboard-text:hover{
+ text-decoration: underline;
+}
+.experience{
+  margin: 0%;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+}
+.interest{
+  margin: 0%;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+}
+.message{
+  position: sticky;
+  bottom: 0px;
+  float: right;
+}
+#messaging{
+
+  background-color: white;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+  width:350px;
+
+}
+#hr{
+  border-right: 1px solid grey;
+ 
+}
+.connect:hover{
+  background-color: rgb(241, 239, 239) !important;
+  color: black !important;
+    
 }

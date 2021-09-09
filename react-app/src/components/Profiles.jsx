@@ -39,15 +39,15 @@ class Profiles extends Component {
     
 render(){
     return(
-    <Container className='mt-5'>
+    <Container className='mt-3 shadow  sidebar'>
     <Row className='justify-content-end' >
-    <Col style={{border : '1px solid gainsboro',borderRadius:'8px',padding:'5px'}} md={4} xl={3} className='shadow px-2 d-none d-md-block'>
-    <h6 
+    <Col className='px-2 d-none d-md-block '>
+    <h5 
         style={{marginBottom:'20px'}} 
-        className='text-heading-medium mt-2'
+        className='text-heading-medium mt-4'
     >
-        <strong>{this.props.heading}</strong>
-    </h6>
+        <strong className="ml-2">{this.props.heading}</strong>
+    </h5>
     {
         this.state.showlessormore 
             ? this.state.data.slice(0,5).map(e => <PeopleUMayKnow dataobj={e} key={e._id}/>)
