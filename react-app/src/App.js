@@ -12,28 +12,31 @@ import Messaging from './components/Messaging';
 import MessageTop from './components/MessageTop';
 import HomePage from './components/HomePage';
 import { BrowserRouter  as Router ,Route} from 'react-router-dom';
+import ProfileImageUpload from './components/ProfileImageUpload';
 
 function App() {
   return (
-<>  <Router>
-    <div className="App">
-      <TopNavbar />
-      <Route path='/profile' exact component= {ProfilePage} />
-      <Route path='/' exact component={HomePage} />
-      <Container>
-        <Row>
-          <Col className='col-md-6  pr-2' >
-              <Route path="/message" exact component={MessageTop} />
+<>  
+        <Router>
+            <div className="App">
+              <TopNavbar />
+              <Route path='/profile' exact component= {ProfilePage} />
+              <Route path='/' exact component={HomePage} />
+              <Container>
+                <Row>
+                  <Col className='col-md-6  pr-2' >
+                      <Route path="/message" exact component={MessageTop} />
 
-          </Col>
-        </Row> 
-      </Container>
-     
-     </div>  
-     <span className="message">
-     <Messaging  />
-    </span>
-   </Router>
+                  </Col>
+                </Row> 
+                
+              </Container>
+            
+            </div>  
+            <span className="message">
+            <Messaging  />
+            </span>
+          </Router>
 </>
    );
  }
