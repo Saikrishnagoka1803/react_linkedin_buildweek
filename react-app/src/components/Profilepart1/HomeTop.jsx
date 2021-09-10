@@ -29,7 +29,7 @@ class HomeTop extends Component{
                         <Row style={{justifyContent:'space-around'}}>
                             <div> 
                             <span className='sup d-flex' style={{justifyContent:'space-around',marginTop:'6px'}}> 
-                                <BsImage style={{fontSize:'1.5rem',color:'skyblue'}}/>
+                                <BsImage style={{fontSize:'1.5rem',color:'skyblue',marginLeft:'10px'}}/>
                                 <h6 style={{marginTop:'4px', marginLeft:'10px'}}>Photo</h6>
                              </span>
                             </div>
@@ -48,7 +48,7 @@ class HomeTop extends Component{
                             <div>
                             <span className='sup d-flex' style={{justifyContent:'space-around',marginTop:'6px'}}> 
                                 <RiArticleLine style={{fontSize:'1.5rem',color:'pink'}}/>
-                                <h6 style={{marginTop:'4px', marginLeft:'10px'}}>Write Article</h6>
+                                <h6 style={{marginTop:'4px', marginLeft:'10px',marginRight:'10px'}}>Write Article</h6>
                              </span>
                             </div>
                         </Row>

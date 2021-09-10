@@ -4,6 +4,9 @@ import SideBarRecent from './SideBarRecent';
 import HomeTop from './Profilepart1/HomeTop';
 import SecondComponent from './ProfilePage/SecondComponent';
 import SideBarProfile from './SideBarProfile';
+import HomeRightSide from './HomeRightSide';
+import HomeAsideNews from './HomeAsideNews';
+import HomePageFooter from './HomePageFooter';
 
 export default function HomePage() {
     return (
@@ -14,9 +17,14 @@ export default function HomePage() {
                     <SideBarProfile />
                     <SideBarRecent />
                 </Col>
-                <Col md={6}>
+                <Col md={5}>
                    <HomeTop />
                    <SecondComponent />
+                </Col>
+                <Col md={4}>
+                <HomeRightSide />
+                <HomeAsideNews />
+                <HomePageFooter />
                 </Col>
             </Row>
         </Container>

@@ -56,7 +56,7 @@ function HomeTopModel() {
                 }}
                 variant='transparent'
             >
-                <span  style={{marginLeft:'-280px'}}>Create a post</span> </Button>
+                <span  style={{marginLeft:'-220px'}}>Create a post</span> </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

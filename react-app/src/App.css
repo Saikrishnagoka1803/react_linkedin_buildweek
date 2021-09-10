@@ -148,3 +148,19 @@ text-decoration: underline;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+.right-sidebar{
+  background-color: white;
+  border-radius: 8px;
+  border: solid 1px rgba(133, 131, 131, 0.287);
+}
+.news{
+  width: 36px;
+  height: 36px;
+  margin-right: 6px;
+}
+.business{
+  margin-left: -24px !important;
+}
+.logo{
+  margin-left: -18px!important;
+}
