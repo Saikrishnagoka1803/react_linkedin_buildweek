@@ -54,7 +54,7 @@ const SecondComponent = () => {
                             <div>
                             <div className="d-flex ">
                                 <h6 className='ml-3 text-left' style={{margin:'0px', fontWeight:'bold'}}>{ele.username}</h6>
-                                <BsThreeDots style={{marginLeft:'19rem'}} />
+                                <BsThreeDots style={{marginLeft:'24rem'}} />
                                
                             </div>
                                 <h6 className='ml-3 fontsize text-left'>29585 followers</h6>
