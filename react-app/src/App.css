@@ -164,3 +164,8 @@ text-decoration: underline;
 .logo{
   margin-left: -18px!important;
 }
+.loginBox{
+   height: 60%;
+   width: 50%;
+   background-color: white;
+}

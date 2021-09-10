@@ -7,11 +7,15 @@ import SideBarProfile from './SideBarProfile';
 import HomeRightSide from './HomeRightSide';
 import HomeAsideNews from './HomeAsideNews';
 import HomePageFooter from './HomePageFooter';
+import TopNavbar from './TopNavbar';
+import Messaging from './Messaging';
 
-export default function HomePage() {
+
+ function HomePage() {
     return (
         <>
         <Container id='profilepage' className='mt-5' >
+        <TopNavbar />
             <Row>
                 <Col md={3}>
                     <SideBarProfile />
@@ -28,7 +32,11 @@ export default function HomePage() {
                 </Col>
             </Row>
         </Container>
+        <span className="message">
+            <Messaging  />
+         </span>
        
           </>
     )
 }
+export default HomePage

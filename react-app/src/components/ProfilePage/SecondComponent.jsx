@@ -1,6 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap'
 import { GoGlobe } from 'react-icons/go'
-import { BsThreeDots } from 'react-icons/bs'
+
 import '../Education.css'
 import Loader from '../Loader'
 import { useEffect, useState } from 'react'
@@ -55,7 +55,7 @@ const SecondComponent = () => {
                             <div className="d-flex ">
 
                                 <h6 className='ml-3 text-left' style={{margin:'0px', fontWeight:'bold'}}>{ele.username}</h6>
-                                <BsThreeDots style={{marginLeft:'13rem'}} />
+                              
                                
                             </div>
                                 <h6 className='ml-3 fontsize text-left'>29585 followers</h6>

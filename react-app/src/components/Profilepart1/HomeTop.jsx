@@ -19,7 +19,7 @@ class HomeTop extends Component{
                 <Row className='justify-content-center' >
                 <Col style={{border : '1px solid gainsboro',borderRadius:'8px',padding:'5px',backgroundColor:'white'}}   className=' px-2 '>
                         <div className='d-flex mt-2'>
-                    <Link to='/profile'><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50' alt="" /></Link>
+                    <Link to='/profile'><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50px' alt="" /></Link>
                     
                     <HomeTopModel/>
                    
