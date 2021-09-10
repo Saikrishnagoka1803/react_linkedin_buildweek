@@ -19,7 +19,7 @@ class HomeTop extends Component{
                 <Row className='justify-content-center' >
                 <Col style={{border : '1px solid gainsboro',borderRadius:'8px',padding:'5px',backgroundColor:'white'}}   className=' px-2 '>
                         <div className='d-flex mt-2'>
-                    <Link to='/profile'><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50' alt="" /></Link>
+                    <Link to='/profile'><img style={{borderRadius:'52px',width:'52px'}} src='https://picsum.photos/100' height='50px' alt="" /></Link>
                     
                     <HomeTopModel/>
                    
@@ -29,7 +29,7 @@ class HomeTop extends Component{
                         <Row style={{justifyContent:'space-around'}}>
                             <div> 
                             <span className='sup d-flex' style={{justifyContent:'space-around',marginTop:'6px'}}> 
-                                <BsImage style={{fontSize:'1.5rem',color:'skyblue'}}/>
+                                <BsImage style={{fontSize:'1.5rem',color:'skyblue',marginLeft:'10px'}}/>
                                 <h6 style={{marginTop:'4px', marginLeft:'10px'}}>Photo</h6>
                              </span>
                             </div>
@@ -48,7 +48,7 @@ class HomeTop extends Component{
                             <div>
                             <span className='sup d-flex' style={{justifyContent:'space-around',marginTop:'6px'}}> 
                                 <RiArticleLine style={{fontSize:'1.5rem',color:'pink'}}/>
-                                <h6 style={{marginTop:'4px', marginLeft:'10px'}}>Write Article</h6>
+                                <h6 style={{marginTop:'4px', marginLeft:'10px',marginRight:'10px'}}>Write Article</h6>
                              </span>
                             </div>
                         </Row>

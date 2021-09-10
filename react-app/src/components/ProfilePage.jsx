@@ -8,6 +8,8 @@ import Education from './Education';
 import Interests from './Interests';
 import Profiles from './Profiles';
 import Footer from './Footer';
+import TopNavbar from './TopNavbar';
+import Messaging from './Messaging';
 
 
 
@@ -17,7 +19,7 @@ export default function ProfilePage() {
         <>
       
         <Container id='profilepage' className='mt-5' >
-        
+        <TopNavbar />
             <Row>
                 <Col className='col-md-8 ordder-md-1 pr-2'>
                 
@@ -37,11 +39,15 @@ export default function ProfilePage() {
 
                 </Col>
             </Row>
+            
             <Footer />
         
           </Container>
-        
-       
+          
+          <span className="message">
+            <Messaging  />
+         </span>
+           
           </>
     )
 }

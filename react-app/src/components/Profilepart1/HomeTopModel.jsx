@@ -2,7 +2,7 @@ import { Modal, Button, Form } from 'react-bootstrap'
 import {useState } from 'react'
 import { GiMeshBall } from 'react-icons/gi'
 import { BiCaretDown } from 'react-icons/bi'
-import {BsImage} from 'react-icons/bs'
+
 import '../Education.css'
 
 function HomeTopModel() {
@@ -19,8 +19,8 @@ function HomeTopModel() {
                     method : 'POST',
                     body: JSON.stringify(Postobj),
                     headers: {
-                          "content-type" : "Application/json",
-                          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTM1ZTM0MDdiZTZjMTAwMTVmOWRiYTUiLCJpYXQiOjE2MzA5MjY3NTYsImV4cCI6MTYzMjEzNjM1Nn0.PLWB0OwFXpY_BhYhvSaxQ1MXjj62jzUvJQCe6_HUleU"
+                          "Content-type" : "application/json",
+                          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTM1ZTM0MDdiZTZjMTAwMTVmOWRiYTUiLCJpYXQiOjE2MzA5MjY3NTYsImV4cCI6MTYzMjEzNjM1Nn0.PLWB0OwFXpY_BhYhvSaxQ1MXjj62jzUvJQCe6_HUleU",
                       }
                 })
                 if(response.ok){
@@ -56,7 +56,7 @@ function HomeTopModel() {
                 }}
                 variant='transparent'
             >
-                <span  style={{marginLeft:'-280px'}}>Create a post</span> </Button>
+                <span  style={{marginLeft:'-220px'}}>Create a post</span> </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
