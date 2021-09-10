@@ -12,6 +12,7 @@ import Messaging from './components/Messaging';
 import MessageTop from './components/MessageTop';
 import HomePage from './components/HomePage';
 import { BrowserRouter  as Router ,Route} from 'react-router-dom';
+import LoginPage from './components/LoginPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Col>
         </Row> 
       </Container>
+      <Route path="/loginpage" exact component={LoginPage} />
       <Footer />
      </div>  
      <span className="message">
