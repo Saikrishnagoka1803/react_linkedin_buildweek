@@ -18,7 +18,7 @@ const SecCompModel = (props) => {
                     <img 
                     onClick = {(e) => {setlgShow(true)}}
                     className='img-fluid' style={{ objectFit: 'cover', overflow: 'hidden' }} 
-                    src={props.image} alt="https://images.unsplash.com/photo-1628191079308-6183b016b3df?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" />
+                    src={props.image} alt="click here to upload an image" />
                 </Col>
                 <Modal
         size="md"
