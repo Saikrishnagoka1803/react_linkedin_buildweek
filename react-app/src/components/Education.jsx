@@ -49,6 +49,7 @@ const Education = () => {
         })
         if(response.ok){
           alert("posted successfully")
+          setShow(false)
           setrender(true)
         }
         

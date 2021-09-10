@@ -8,6 +8,7 @@ const EducationElements = ({eachedu}) => {
 
     
     const [show, setShow] = useState(false);
+   
     const [put, setput] = useState({
         company : eachedu.company,
         role : eachedu.role,
@@ -34,6 +35,8 @@ const handleput = async(e) => {
         })
         if(response.ok){
           alert("Edited successfully")
+          setShow(false)
+          
         }
         
     } catch (error) {
@@ -53,6 +56,8 @@ const handledelete = async() =>{
         })
         if(response.ok){
           alert("Deleted successfully")
+          setShow(false)
+         
         }
     } catch (error) {
         console.log(error)

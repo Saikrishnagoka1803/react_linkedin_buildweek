@@ -215,3 +215,17 @@ border: 1px solid rgb(241, 239, 239)
 #footer .copyright {
     font-size: 13px;
 }
+.profile-pic-modal{
+    height: 15rem;
+    width: 15rem;
+}
+
+.first-svg{
+    height: 2rem;
+    width: 2rem;
+}
+.profile-pic-upload{
+    height: 15rem;
+    width: 15rem;
+    Border-radius: 50%;
+}
